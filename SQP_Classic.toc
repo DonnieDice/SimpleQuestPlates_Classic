@@ -1,10 +1,10 @@
 ## Interface: 11509,20506,50504
 ## Title: |cff58be81S|r|cffffffffimple|r |cff58be81Q|r|cffffffffuest|r |cff58be81P|r|cfffffffflates|r|cff58be81!|r |cffFFD700(Classic)|r
 ## Notes: Displays quest progress icons on enemy nameplates.|nType |cff58be81/sqp|r for options.|n|cff8B1538[Classic]|r |cff58be81By DonnieDice|r
-## Version: 1.9.8-classic
+## Version: 1.9.9-classic.2
 ## Author: DonnieDice
-## Category: RGX
-## Group: RGX
+## Category: RealmGX
+## Group: RealmGX
 ## RequiredDeps: RGX-Framework
 ## Email: donniedice@protonmail.com
 ## SavedVariables: SQPClassicSettings
@@ -12,8 +12,8 @@
 ## DefaultState: Enabled
 
 ## X-Category: UI Media, Questing & Leveling, Miscellaneous
-## X-Website: https://github.com/RGXMods/SimpleQuestPlates
-## X-Curse-Project-ID: 1319776
+## X-Website: https://github.com/RGXMods/SQP_Classic
+## X-Curse-Project-ID: 1600794
 
 
 ## Main loader
