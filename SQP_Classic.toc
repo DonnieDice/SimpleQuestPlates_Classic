@@ -12,7 +12,7 @@
 ## DefaultState: Enabled
 
 ## X-Category: UI Media, Questing & Leveling, Miscellaneous
-## X-Website: https://github.com/RGXMods/SQP_Classic
+## X-Website: https://github.com/RGXMods/SimpleQuestPlates_Classic
 ## X-Curse-Project-ID: 1600794
 
 
