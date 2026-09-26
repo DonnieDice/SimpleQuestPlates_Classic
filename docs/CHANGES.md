@@ -1,3 +1,8 @@
+# 1.9.9-classic.2 - 2026-09-26
+
+## Changes
+- Addon list **Category** and **Group** are now `RealmGX` instead of `RGX`, so these addons group under the RealmGX heading in the interface addon list.
+
 # v1.9.9-classic - 2026-09-26
 
 ## Changes
