@@ -13,6 +13,7 @@
 
 ## X-Category: UI Media, Questing & Leveling, Miscellaneous
 ## X-Website: https://github.com/RGXMods/SimpleQuestPlates_Classic
+## X-Localizations: enUS, enGB, deDE, esES, esMX, frFR, itIT, koKR, ptBR, ptPT, ruRU, zhCN, zhTW
 ## X-Curse-Project-ID: 1600794
 
 
