@@ -9,4 +9,4 @@ Repository automation and platform metadata.
 ## Notes
 
 - Release automation is tag-driven (`v*`).
-- Packaging uses BigWigsMods packager plus platform API tokens from repository secrets.
+- Packaging uses the in-house deterministic packager (`tools/release/packager.mjs` + `tools/release/publish-release.mjs`) plus platform API tokens from repository secrets.
