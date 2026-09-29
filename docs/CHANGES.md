@@ -1,3 +1,8 @@
+# 1.9.9-classic.3 - 2026-09-29
+
+## Changes
+- Added the `AGENTS.md` framework-build and interface-versioning directives; TOC metadata cleaned to the sanctioned author field.
+
 # 1.9.9-classic.2 - 2026-09-26
 
 ## Changes
