@@ -127,6 +127,36 @@ local L = {
     ["STATUS_ANCHOR"] = "  Position: |cff58be81%s|r",
     ["ADDON_ENABLED"] = "is now |cff00ff00ENABLED|r",
     ["ADDON_DISABLED"] = "is now |cffff0000DISABLED|r",
+
+    -- Minimap tooltip (routed from data/core.lua SetupMinimapButton)
+    ["MINIMAP_TOOLTIP_OPEN_OPTIONS"] = "Open options",
+    ["MINIMAP_TOOLTIP_MOVE"] = "Move around minimap",
+    ["MINIMAP_TOOLTIP_HIDE"] = "Hide minimap icon",
+    ["MINIMAP_ICON_SHOWN"] = "Minimap icon shown.",
+    ["MINIMAP_ICON_HIDDEN"] = "Minimap icon hidden. Use |cfffff569/sqp icon on|r to show it again.",
+
+    -- OnLogin loaded message (routed from data/core.lua RGX:OnLogin)
+    ["MSG_CLASSIC_LOADED"] = "|cff58be81SimpleQuestPlates! Classic|r loaded. Type |cfffff569/sqp help|r for commands.",
+
+    -- Compat-layer startup notice (routed from data/core.lua file-scope print)
+    ["MSG_COMPAT_LAYER"] = "[SQP_Classic] Loaded with RGX-Framework compat layer",
+
+    -- About panel (routed from data/options_about.lua)
+    ["ABOUT_TITLE"] = "|cff8B1538RGX |cff58be81Simple Quest Plates!|r",
+    ["ABOUT_FLAVOR"] = "Classic",
+    ["ABOUT_AUTHOR"] = "|cff888888By DonnieDice \u00b7 donniedice@protonmail.com|r",
+    ["ABOUT_DESCRIPTION"] = "Displays quest progress icons on enemy nameplates.\nPer-type colors, tinting, font, and animation.",
+    ["ABOUT_COMMUNITY_TITLE"] = "|cff58be81RGX Mods Community|r",
+    ["ABOUT_COMMUNITY_DESC"] = "Join us for support, feedback, and more!",
+    ["ABOUT_COMMUNITY_LINK"] = "|cffffffdadiscord.gg/rgxmods|r",
+    ["ABOUT_SLASH_TITLE"] = "|cff58be81Slash Commands  |cffaaaaaa/sqp|r",
+    ["ABOUT_CMD_OPTIONS"] = "Open options panel",
+    ["ABOUT_CMD_ONOFF"] = "Enable or disable",
+    ["ABOUT_CMD_TEST"] = "Test quest detection",
+    ["ABOUT_CMD_RESET"] = "Reset all settings",
+    ["ABOUT_CMD_STATUS"] = "Show current settings",
+    ["ABOUT_CMD_SCALE"] = "Set icon scale",
+    ["ABOUT_CMD_OFFSET"] = "Set X / Y offset",
 }
 
 -- Set English as default

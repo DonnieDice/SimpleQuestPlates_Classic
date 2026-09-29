@@ -24,18 +24,18 @@ function SQP:CreateAboutSection(content)
     -- Title
     local aboutTitle = leftColumn:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     aboutTitle:SetPoint("TOPLEFT", 20, yOffset)
-    aboutTitle:SetText("|cff8B1538RGX |cff58be81Simple Quest Plates!|r")
+    aboutTitle:SetText(self.L["ABOUT_TITLE"] or "|cff8B1538RGX |cff58be81Simple Quest Plates!|r")
     yOffset = yOffset - 28
 
     -- Version + Author
     local versionText = leftColumn:CreateFontString(nil, "ARTWORK", "GameFontNormal")
     versionText:SetPoint("TOPLEFT", 20, yOffset)
-    versionText:SetText("v" .. (SQP.VERSION or "1.0.0") .. "  |cffaaaaaaRetail — Warcraft Midnight|r")
+    versionText:SetText("v" .. (SQP.VERSION or "1.0.0") .. "  |cffaaaaaa" .. (self.L["ABOUT_FLAVOR"] or "Classic") .. "|r")
     yOffset = yOffset - 20
 
     local authorText = leftColumn:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
     authorText:SetPoint("TOPLEFT", 20, yOffset)
-    authorText:SetText("|cff888888By DonnieDice · donniedice@protonmail.com|r")
+    authorText:SetText(self.L["ABOUT_AUTHOR"] or "|cff888888By DonnieDice · donniedice@protonmail.com|r")
     yOffset = yOffset - 26
 
     -- Description
@@ -43,7 +43,7 @@ function SQP:CreateAboutSection(content)
     descText:SetPoint("TOPLEFT", 20, yOffset)
     descText:SetPoint("TOPRIGHT", -10, yOffset)
     descText:SetJustifyH("LEFT")
-    descText:SetText("Displays quest progress icons on enemy nameplates.\nPer-type colors, tinting, font, and animation.")
+    descText:SetText(self.L["ABOUT_DESCRIPTION"] or "Displays quest progress icons on enemy nameplates.\nPer-type colors, tinting, font, and animation.")
     yOffset = yOffset - 40
 
     -- RGX Community box
@@ -62,15 +62,15 @@ function SQP:CreateAboutSection(content)
 
     local discordTitle = communityFrame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
     discordTitle:SetPoint("TOPLEFT", discordIcon, "TOPRIGHT", 8, -4)
-    discordTitle:SetText("|cff58be81RGX Mods Community|r")
+    discordTitle:SetText(self.L["ABOUT_COMMUNITY_TITLE"] or "|cff58be81RGX Mods Community|r")
 
     local discordDesc = communityFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
     discordDesc:SetPoint("TOPLEFT", discordTitle, "BOTTOMLEFT", 0, -3)
-    discordDesc:SetText("Join us for support, feedback, and more!")
+    discordDesc:SetText(self.L["ABOUT_COMMUNITY_DESC"] or "Join us for support, feedback, and more!")
 
     local discordLink = communityFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
     discordLink:SetPoint("TOPLEFT", discordDesc, "BOTTOMLEFT", 0, -3)
-    discordLink:SetText("|cffffffdadiscord.gg/rgxmods|r")
+    discordLink:SetText(self.L["ABOUT_COMMUNITY_LINK"] or "|cffffffdadiscord.gg/rgxmods|r")
 
     -- ── RIGHT COLUMN ──────────────────────────────────────────────────────────
     local rightYOffset = -15
@@ -86,18 +86,18 @@ function SQP:CreateAboutSection(content)
 
     local cmdTitle = cmdFrame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
     cmdTitle:SetPoint("TOPLEFT", cmdFrame, "TOPLEFT", 12, -10)
-    cmdTitle:SetText("|cff58be81Slash Commands  |cffaaaaaa/sqp|r")
+    cmdTitle:SetText(self.L["ABOUT_SLASH_TITLE"] or "|cff58be81Slash Commands  |cffaaaaaa/sqp|r")
 
     local cmdList = cmdFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
     cmdList:SetPoint("TOPLEFT", cmdTitle, "BOTTOMLEFT", 0, -6)
     cmdList:SetJustifyH("LEFT")
     cmdList:SetText(
-        "|cff58be81/sqp|r               Open options panel\n" ..
-        "|cff58be81/sqp on|r / |cff58be81off|r   Enable or disable\n" ..
-        "|cff58be81/sqp test|r          Test quest detection\n" ..
-        "|cff58be81/sqp reset|r         Reset all settings\n" ..
-        "|cff58be81/sqp status|r        Show current settings\n" ..
-        "|cff58be81/sqp scale 1.2|r     Set icon scale\n" ..
-        "|cff58be81/sqp offset 0 3|r    Set X / Y offset"
+        "|cff58be81/sqp|r               " .. (self.L["ABOUT_CMD_OPTIONS"] or "Open options panel") .. "\n" ..
+        "|cff58be81/sqp on|r / |cff58be81off|r   " .. (self.L["ABOUT_CMD_ONOFF"] or "Enable or disable") .. "\n" ..
+        "|cff58be81/sqp test|r          " .. (self.L["ABOUT_CMD_TEST"] or "Test quest detection") .. "\n" ..
+        "|cff58be81/sqp reset|r         " .. (self.L["ABOUT_CMD_RESET"] or "Reset all settings") .. "\n" ..
+        "|cff58be81/sqp status|r        " .. (self.L["ABOUT_CMD_STATUS"] or "Show current settings") .. "\n" ..
+        "|cff58be81/sqp scale 1.2|r     " .. (self.L["ABOUT_CMD_SCALE"] or "Set icon scale") .. "\n" ..
+        "|cff58be81/sqp offset 0 3|r    " .. (self.L["ABOUT_CMD_OFFSET"] or "Set X / Y offset")
     )
 end

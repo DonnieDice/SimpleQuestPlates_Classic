@@ -446,9 +446,9 @@ function SQP:SetupMinimapButton()
         tooltip = {
             title = format("|T%s:18:18:0:0|t |cff58be81S|r|cffffffffimple |cff58be81Q|r|cffffffffuest |cff58be81P|r|cfffffffflates|cff58be81!|r", self.ICON_TEXTURE or ""),
             lines = {
-                { left = "|cff58be81Left-Click|r",       right = "Open options" },
-                { left = "|cff4ecdc4Drag|r",             right = "Move around minimap" },
-                { left = "|cffe74c3cCtrl+Right-Click|r", right = "Hide minimap icon" },
+                { left = "|cff58be81Left-Click|r",       right = self.L["MINIMAP_TOOLTIP_OPEN_OPTIONS"] or "Open options" },
+                { left = "|cff4ecdc4Drag|r",             right = self.L["MINIMAP_TOOLTIP_MOVE"] or "Move around minimap" },
+                { left = "|cffe74c3cCtrl+Right-Click|r", right = self.L["MINIMAP_TOOLTIP_HIDE"] or "Hide minimap icon" },
             },
         },
         onLeftClick = function()
@@ -466,9 +466,9 @@ function SQP:ToggleMinimapIcon(show, silent)
     self.minimapBtn:SetVisible(show)
     if not silent then
         if show then
-            self:PrintMessage("Minimap icon shown.")
+            self:PrintMessage(self.L["MINIMAP_ICON_SHOWN"] or "Minimap icon shown.")
         else
-            self:PrintMessage("Minimap icon hidden. Use |cfffff569/sqp icon on|r to show it again.")
+            self:PrintMessage(self.L["MINIMAP_ICON_HIDDEN"] or "Minimap icon hidden. Use |cfffff569/sqp icon on|r to show it again.")
         end
     end
 end
@@ -526,7 +526,7 @@ RGX:OnLoad(addonName, function()
 end)
 
 RGX:OnLogin(function()
-    SQP:PrintMessage("|cff58be81SimpleQuestPlates! Classic|r loaded. Type /sqp help for commands.")
+    SQP:PrintMessage(SQP.L["MSG_CLASSIC_LOADED"] or "|cff58be81SimpleQuestPlates! Classic|r loaded. Type |cfffff569/sqp help|r for commands.")
 end)
 
-print("|cFF88FF88[SQP_Classic] Loaded with RGX-Framework compat layer|r")
+print(SQP.L["MSG_COMPAT_LAYER"] or "|cFF88FF88[SQP_Classic] Loaded with RGX-Framework compat layer|r")
