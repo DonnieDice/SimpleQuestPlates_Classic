@@ -11,5 +11,5 @@ Responsibilities:
 - Determine release type (`release`, `beta`, `alpha`)
 - Extract addon version from `SimpleQuestPlates.toc`
 - Feed `docs/CHANGES.md` into release text
-- Run BigWigsMods packager for distribution
+- Run the in-house packager for distribution (GitHub, CurseForge, Wago)
 - Send Discord notifications on success/failure
