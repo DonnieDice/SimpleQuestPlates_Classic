@@ -10,6 +10,7 @@ ignore:
   - GEMINI.md
   - .claude
   - .pkgmeta
+  - tools
 
 plain-copy:
   - LICENSE
