@@ -1,5 +1,5 @@
 ## Interface: 11509,20506,50504
-## X-Wago-ID: jK8W1l6y0
+## X-Wago-ID: jK8W1l6y
 ## Title: |cff58be81S|r|cffffffffimple|r |cff58be81Q|r|cffffffffuest|r |cff58be81P|r|cfffffffflates|r|cff58be81!|r |cffFFD700(Classic)|r
 ## Notes: Displays quest progress icons on enemy nameplates.|nType |cff58be81/sqp|r for options.|n|cff8B1538[Classic]|r
 ## Version: 1.9.9-classic.3
